@@ -1,0 +1,62 @@
+﻿<Window x:Class="Transportnaya.Windowst.AddZakazchik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Transportnaya.Windowst"
+        mc:Ignorable="d"
+        Title="AddZakazchik" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Calend4" Content="Календарь" Grid.Column="0" Grid.Row="0" Background="#FF75D6EC"></Button>
+        <Button x:Name="Ati4" Content="ATI" Grid.Column="1" Grid.Row="0" Background="#FF75D6EC"></Button>
+        <Button x:Name="Calkul4" Content="Калькулятор" Grid.Column="2" Grid.Row="0" Background="#FF75D6EC"></Button>
+        <Button x:Name="MApe4" Content="Карта" Grid.Column="3" Grid.Row="0" Background="#FF75D6EC" ></Button>
+        <Label Content="Данные о заказчике" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" FontSize="20" FontFamily="New Time Romans" Grid.ColumnSpan="3"></Label>
+        <Label Content="Наименование заказчика" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="Юридический адрес заказчика" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="ИНН заказчика" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="КПП заказчика" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="Телефон заказчика" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="Банковский счет заказчика" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="ОГРН" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="8" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="Наименование банка" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="9" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="БИК банка" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="10" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="Контрактное лицо" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="11" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Button x:Name="Back4" Content="Назад" Grid.Row="13" Grid.Column="0" Background="#FF75D6EC" Click="Back4_Click"></Button>
+        <Button x:Name="Add4" Content="Добавить" Grid.Row="13" Grid.Column="4" Width="99" HorizontalAlignment="Left" Background="#FF75D6EC" Height="30" VerticalAlignment="Bottom" Click="Add4_Click"></Button>
+        <TextBox x:Name="NameTVB" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="YorTB" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="INNTB" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="KPPTB" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="PhonTB" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="BancScetTB" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="OGRNTB" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="NameBanTB" Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="BIKTB" Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="KontracTB" Grid.Row="11" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        
+    </Grid>
+</Window>

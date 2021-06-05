@@ -1,0 +1,47 @@
+﻿<Window x:Class="Transportnaya.Windowst.Zagruzki"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Transportnaya.Windowst"
+        mc:Ignorable="d"
+        Title="Zagruzki" Height="450" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="380*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="323*"/>
+            <RowDefinition Height="66*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Calend3" Content="Календарь" Grid.Column="0" Grid.Row="0" Background="#FF75D6EC"></Button>
+        <Button x:Name="Ati3" Content="ATI" Grid.Column="1" Grid.Row="0" Background="#FF75D6EC"></Button>
+        <Button x:Name="Calkul3" Content="Калькулятор" Grid.Column="2" Grid.Row="0" Background="#FF75D6EC"></Button>
+        <Button x:Name="MApe3" Content="Карта" Grid.Column="3" Grid.Row="0" Background="#FF75D6EC" ></Button>
+        <DataGrid x:Name="Table2" Grid.Row="1" Grid.ColumnSpan="5" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер&#x0A;загрузки" Binding="{Binding }"/>
+                <DataGridTextColumn Header="Наименование&#x0A;заказчика" Binding="{Binding}"/>
+                <DataGridTextColumn Header="Наименование&#x0A;перевозчика" Binding="{Binding}"/>
+                <DataGridTextColumn Header="Наименование&#x0A;груза" Binding="{Binding}"/>
+                <DataGridTextColumn Header="Адрес&#x0A;загрузки" Binding="{Binding}"/>
+                <DataGridTextColumn Header="Дата&#x0A;загрузки" Binding="{Binding}"/>
+                <DataGridTextColumn Header="Адрес&#x0A;разгрузки" Binding="{Binding}"/>
+                <DataGridTextColumn Header="Дата&#x0A;разгрузки" Binding="{Binding}"/>
+                <DataGridTextColumn Header="Марка и&#x0A;номер тягача" Binding="{Binding}"/>
+                <DataGridTextColumn Header="Вес&#x0A;груза" Binding="{Binding}"/>
+                <DataGridTextColumn Header="Стоимость" Binding="{Binding}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="BackZ" Content="Назад" Grid.Row="2" Grid.Column="0" Background="#FF75D6EC" Click="BackZ_Click"></Button>
+
+        <Button x:Name="DeletZ" Content="Удалить" Grid.Row="2" Grid.Column="2" Background="#FF75D6EC" Click="DeletZ_Click"></Button>
+
+        <Button x:Name="AddZ" Content="Добавить" Grid.Row="2" Grid.Column="4" Width="99" HorizontalAlignment="Left" Background="#FF75D6EC" Click="AddZ_Click"></Button>
+    </Grid>
+</Window>

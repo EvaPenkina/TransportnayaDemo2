@@ -1,0 +1,55 @@
+﻿<Window x:Class="Transportnaya.Windowst.AddPer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Transportnaya.Windowst"
+        mc:Ignorable="d"
+        Title="AddPer" Height="450" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Calend3" Content="Календарь" Grid.Column="0" Grid.Row="0" Background="#FF75D6EC"></Button>
+        <Button x:Name="Ati3" Content="ATI" Grid.Column="1" Grid.Row="0" Background="#FF75D6EC"></Button>
+        <Button x:Name="Calkul3" Content="Калькулятор" Grid.Column="2" Grid.Row="0" Background="#FF75D6EC"></Button>
+        <Button x:Name="MApe3" Content="Карта" Grid.Column="3" Grid.Row="0" Background="#FF75D6EC" ></Button>
+        <Label Content="Данные о перевозчике" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" FontSize="20" FontFamily="New Time Romans" Grid.ColumnSpan="3"></Label>
+        <Label Content="Наименование перевозчика" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="ФИО водителя" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="Паспортные данные водителя" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="Марка и номер тягача" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="Номер прицепа" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="Телефон водителя" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Label Content="Доступность" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="8" Grid.Column="0" FontSize="14"  Grid.ColumnSpan="2" FontFamily="New Time Romans" ></Label>
+        <Button x:Name="Back2" Content="Назад" Grid.Row="9" Grid.Column="0" Background="#FF75D6EC" Click="Back2_Click"></Button>
+
+       
+
+        <Button x:Name="Add2" Content="Добавить" Grid.Row="9" Grid.Column="4" Width="99" HorizontalAlignment="Left" Background="#FF75D6EC" Click="Add2_Click"></Button>
+        <TextBox x:Name="NameTB" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="FIOTB" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="PasDTB" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="MarkTB" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="NummberTB" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="PhoneTB" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+        <TextBox x:Name="CekTB" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
